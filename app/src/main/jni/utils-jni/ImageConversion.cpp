@@ -50,7 +50,7 @@ jbyte NightGamma[511] =
 
 // summation with tone-curve applied after
 // used in night-mode viewfinder
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_sumByteArraysNV21
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_util_ImageConversion_sumByteArraysNV21
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -100,7 +100,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_sumByt
 }
 
 
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_TransformNV21
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_util_ImageConversion_TransformNV21
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -127,7 +127,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_Transf
 
 }
 
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_TransformNV21N
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_util_ImageConversion_TransformNV21N
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -144,7 +144,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_Transf
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_util_ImageConversion_JpegConvert
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_util_ImageConversion_JpegConvert
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -178,7 +178,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_util_ImageConversion_JpegCo
 	return (jint)out;
 }
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_util_ImageConversion_JpegConvertN
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_util_ImageConversion_JpegConvertN
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -208,7 +208,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_util_ImageConversion_JpegCo
 	return (jint)out;
 }
 
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_convertNV21toGLN(
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_util_ImageConversion_convertNV21toGLN(
 		JNIEnv *env, jclass clazz, jint ain, jbyteArray aout, jint width,	jint height, jint outWidth, jint outHeight)
 {
 	jbyte *cImageOut = env->GetByteArrayElements(aout, 0);
@@ -218,7 +218,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_conver
 	env->ReleaseByteArrayElements(aout, cImageOut, 0);
 }
 
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_convertNV21toGL(
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_util_ImageConversion_convertNV21toGL(
 		JNIEnv *env, jclass clazz, jbyteArray ain, jbyteArray aout, jint width,	jint height, jint outWidth, jint outHeight)
 {
 	jbyte *cImageIn = env->GetByteArrayElements(ain, 0);
@@ -230,7 +230,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_conver
 	env->ReleaseByteArrayElements(aout, cImageOut, 0);
 }
 
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_resizeJpeg2RGBA(
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_util_ImageConversion_resizeJpeg2RGBA(
 		JNIEnv *env, jclass clazz,
 		jint jpeg,
 		jint jpeg_length,
@@ -307,7 +307,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_resize
 	env->ReleaseByteArrayElements(rgb_out, (jbyte*)rgb_bytes, JNI_COMMIT);
 }
 
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_addCornersRGBA8888(JNIEnv* env, jclass,
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_util_ImageConversion_addCornersRGBA8888(JNIEnv* env, jclass,
 		jbyteArray rgb_out, jint outWidth, jint outHeight)
 {
 	unsigned char *rgb_bytes = (unsigned char *)env->GetByteArrayElements(rgb_out, 0);
@@ -315,7 +315,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_almalence_util_ImageConversion_addCor
 	env->ReleaseByteArrayElements(rgb_out, (jbyte*)rgb_bytes, JNI_COMMIT);
 }
 
-extern "C" JNIEXPORT jintArray JNICALL Java_com_almalence_util_HeapUtil_getMemoryInfo(JNIEnv* env, jclass)
+extern "C" JNIEXPORT jintArray JNICALL Java_com_zihuatanejo_finalcamera_util_HeapUtil_getMemoryInfo(JNIEnv* env, jclass)
 {
 	FILE *f;
 	char dummy[1024];

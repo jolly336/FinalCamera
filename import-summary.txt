@@ -1,0 +1,70 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* .project_plus
+* Almalence Imaging SDK for Open Camera - LICENSE.pdf
+* LICENSE
+* README.md
+* default.properties
+* doc\
+* doc\Almalence GUI.doc
+* doc\Developer's guide - Plugins creation.doc
+* doc\GUI customization.doc
+* doc\OpenCam draft structure.doc
+* doc\SharedMemory.txt
+* doc\android-tree-build\
+* doc\android-tree-build\Android.mk
+* doc\android-tree-build\instructions.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* jni\ => app\src\main\jni\
+* libs\android-support-v13.jar => app\libs\android-support-v13.jar
+* libs\androidexiv2.jar => app\libs\androidexiv2.jar
+* libs\armeabi-v7a\libalmalence-mp4editor.so => app\src\main\jniLibs\armeabi-v7a\libalmalence-mp4editor.so
+* libs\armeabi-v7a\libalmalib.so => app\src\main\jniLibs\armeabi-v7a\libalmalib.so
+* libs\armeabi-v7a\libalmashot-clr.so => app\src\main\jniLibs\armeabi-v7a\libalmashot-clr.so
+* libs\armeabi-v7a\libalmashot-dro.so => app\src\main\jniLibs\armeabi-v7a\libalmashot-dro.so
+* libs\armeabi-v7a\libalmashot-hdr.so => app\src\main\jniLibs\armeabi-v7a\libalmashot-hdr.so
+* libs\armeabi-v7a\libalmashot-night.so => app\src\main\jniLibs\armeabi-v7a\libalmashot-night.so
+* libs\armeabi-v7a\libalmashot-pano.so => app\src\main\jniLibs\armeabi-v7a\libalmashot-pano.so
+* libs\armeabi-v7a\libalmashot-seamless.so => app\src\main\jniLibs\armeabi-v7a\libalmashot-seamless.so
+* libs\armeabi-v7a\libalmashot-sequence.so => app\src\main\jniLibs\armeabi-v7a\libalmashot-sequence.so
+* libs\armeabi-v7a\libbestshot.so => app\src\main\jniLibs\armeabi-v7a\libbestshot.so
+* libs\armeabi-v7a\libhiresportrait.so => app\src\main\jniLibs\armeabi-v7a\libhiresportrait.so
+* libs\armeabi-v7a\libhistogram.so => app\src\main\jniLibs\armeabi-v7a\libhistogram.so
+* libs\armeabi-v7a\libpreshot.so => app\src\main\jniLibs\armeabi-v7a\libpreshot.so
+* libs\armeabi-v7a\libswapheap.so => app\src\main\jniLibs\armeabi-v7a\libswapheap.so
+* libs\armeabi-v7a\libutils-image.so => app\src\main\jniLibs\armeabi-v7a\libutils-image.so
+* libs\armeabi-v7a\libutils-jni.so => app\src\main\jniLibs\armeabi-v7a\libutils-jni.so
+* libs\armeabi-v7a\libyuvimage.so => app\src\main\jniLibs\armeabi-v7a\libyuvimage.so
+* libs\openiab-0.9.8.6.jar => app\libs\openiab-0.9.8.6.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

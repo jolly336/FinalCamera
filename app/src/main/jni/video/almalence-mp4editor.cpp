@@ -8,7 +8,7 @@
 
 const unsigned int AP4_MUX_DEFAULT_VIDEO_FRAME_RATE = 24;
 
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_capture_video_Mp4Editor_appendFds
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_video_Mp4Editor_appendFds
 (
 	JNIEnv* env,
 	jobject thiz,

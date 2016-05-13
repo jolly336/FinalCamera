@@ -7,7 +7,7 @@
     android:orientation="vertical" 
     android:visibility="gone">
 
-    <com.almalence.ui.RotateLayout
+    <com.zihuatanejo.finalcamera.ui.RotateLayout
         android:id="@+id/rotateLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:orientation="horizontal" 
                 android:background="@drawable/layout_border_multishot_option">
 
-                <com.almalence.ui.RotateImageView
+                <com.zihuatanejo.finalcamera.ui.RotateImageView
                     android:layout_width="@dimen/multishotOptionsImageSize"
                     android:layout_height="@dimen/multishotOptionsImageSize"
                     android:layout_gravity="left"
@@ -60,7 +60,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal" >
 
-                <com.almalence.ui.RotateImageView
+                <com.zihuatanejo.finalcamera.ui.RotateImageView
                     android:layout_width="@dimen/multishotOptionsImageSize"
                     android:layout_height="@dimen/multishotOptionsImageSize"
                     android:layout_gravity="left"
@@ -85,7 +85,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal" >
 
-                <com.almalence.ui.RotateImageView
+                <com.zihuatanejo.finalcamera.ui.RotateImageView
                     android:layout_width="@dimen/multishotOptionsImageSize"
                     android:layout_height="@dimen/multishotOptionsImageSize"
                     android:background="@android:color/transparent"
@@ -101,6 +101,6 @@
             </LinearLayout>
         </LinearLayout>
 
-     </com.almalence.ui.RotateLayout>
+     </com.zihuatanejo.finalcamera.ui.RotateLayout>
 
 </LinearLayout>

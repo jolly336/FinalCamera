@@ -29,7 +29,7 @@ static unsigned char *yuv;
 static int SX = 0;
 static int SY = 0;
 
-extern "C" JNIEXPORT jboolean JNICALL Java_com_almalence_YuvImage_SaveJpegFreeOutMT
+extern "C" JNIEXPORT jboolean JNICALL Java_com_zihuatanejo_finalcamera_YuvImage_SaveJpegFreeOutMT
 (
 		JNIEnv* env, jobject, int jout,
 		int format, int width, int height, jintArray offsets,
@@ -61,7 +61,7 @@ extern "C" JNIEXPORT jboolean JNICALL Java_com_almalence_YuvImage_SaveJpegFreeOu
 	return result;
 }
 
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_YuvImage_RemoveFrame
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_YuvImage_RemoveFrame
 (
 		JNIEnv* env,
 		jobject thiz
@@ -70,7 +70,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_almalence_YuvImage_RemoveFrame
 	free((void*)yuv);
 }
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_YuvImage_GetFrame
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_YuvImage_GetFrame
 (
 		JNIEnv* env,
 		jobject thiz
@@ -79,7 +79,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_YuvImage_GetFrame
 	return (jint)yuv;
 }
 
-extern "C" JNIEXPORT jbyte* JNICALL Java_com_almalence_YuvImage_GetByteFrame
+extern "C" JNIEXPORT jbyte* JNICALL Java_com_zihuatanejo_finalcamera_YuvImage_GetByteFrame
 (
 		JNIEnv* env,
 		jobject thiz
@@ -131,7 +131,7 @@ void ExtractYuvFromDirectBuffer(unsigned char *Y, unsigned char *U,
 
 }
 
-extern "C" JNIEXPORT int JNICALL Java_com_almalence_YuvImage_CreateYUVImageFromRAW
+extern "C" JNIEXPORT int JNICALL Java_com_zihuatanejo_finalcamera_YuvImage_CreateYUVImageFromRAW
 (
 		JNIEnv* env,
 		jobject thiz,
@@ -195,7 +195,7 @@ extern "C" JNIEXPORT int JNICALL Java_com_almalence_YuvImage_CreateYUVImageFromR
 	return 0;
 }
 
-extern "C" JNIEXPORT int JNICALL Java_com_almalence_YuvImage_CreateYUVImage
+extern "C" JNIEXPORT int JNICALL Java_com_zihuatanejo_finalcamera_YuvImage_CreateYUVImage
 (
 		JNIEnv* env,
 		jobject thiz,
@@ -237,7 +237,7 @@ extern "C" JNIEXPORT int JNICALL Java_com_almalence_YuvImage_CreateYUVImage
 	return 0;
 }
 
-extern "C" JNIEXPORT jbyte* JNICALL Java_com_almalence_YuvImage_CreateYUVImageByteArray
+extern "C" JNIEXPORT jbyte* JNICALL Java_com_zihuatanejo_finalcamera_YuvImage_CreateYUVImageByteArray
 (
 		JNIEnv* env,
 		jobject thiz,
@@ -284,7 +284,7 @@ extern "C" JNIEXPORT jbyte* JNICALL Java_com_almalence_YuvImage_CreateYUVImageBy
 	return (jbyte *)jpixels;
 }
 
-extern "C" JNIEXPORT int JNICALL Java_com_almalence_YuvImage_AllocateMemoryForYUV
+extern "C" JNIEXPORT int JNICALL Java_com_zihuatanejo_finalcamera_YuvImage_AllocateMemoryForYUV
 (
 		JNIEnv* env,
 		jobject thiz,

@@ -95,7 +95,7 @@ void mem_usage(long *mem_free)
 }
 
 //max amount of elements which can be allocated
-JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_AvailableMemory
+JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_AvailableMemory
 (
 	JNIEnv* env,
 	jobject pObj
@@ -108,7 +108,7 @@ JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_Availa
 
 //allocate buffer for storing
 //allocation depends on image w and h, selected fps, selected amount of seconds to store, image format
-JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_AllocateBuffer
+JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_AllocateBuffer
 (
 	JNIEnv* env,
 	jobject pObj,
@@ -166,7 +166,7 @@ JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_Alloca
 }
 
 //free allocated bufer
-JNIEXPORT jboolean JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_FreeBuffer
+JNIEXPORT jboolean JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_FreeBuffer
 (
 	JNIEnv* env,
 	jobject pObj
@@ -205,7 +205,7 @@ JNIEXPORT jboolean JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_Fr
 }
 
 //insert data into buffer specifying if image is in portrait/landscape orientation
-JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_InsertToBuffer
+JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_InsertToBuffer
 (
 	JNIEnv* env,
 	jobject pObj,
@@ -264,7 +264,7 @@ JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_Insert
 
 //get image converted from yuv to JPEG (to show preview)
 //specify orientation or use orientation from orient_buffer
-JNIEXPORT jintArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_GetFromBufferRGBA
+JNIEXPORT jintArray JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_GetFromBufferRGBA
 (
 	JNIEnv* env,
 	jobject pObj,
@@ -315,7 +315,7 @@ JNIEXPORT jintArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_G
 // all what is needed - to move data from native heap into java heap
 //
 //show in slow mode
-JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_GetFromBufferToShowInSlow
+JNIEXPORT jbyteArray JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_GetFromBufferToShowInSlow
 (
 	JNIEnv* env,
 	jobject pObj,
@@ -368,8 +368,8 @@ JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_
 }
 
 //check image orientation by index
-//JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_isPortrait
-JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_getOrientation
+//JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_isPortrait
+JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_getOrientation
 (
 	JNIEnv* env,
 	jobject pObj,
@@ -405,8 +405,8 @@ JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_getOri
 }
 
 ////check image orientation by index in reserved buffer
-////JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_isPortraitReserved
-//JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_getOrientationReserved
+////JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_isPortraitReserved
+//JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_getOrientationReserved
 //(
 //	JNIEnv* env,
 //	jobject pObj,
@@ -429,7 +429,7 @@ JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_getOri
 //}
 
 //gets amount of images in buffer
-JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_GetImageCount
+JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_GetImageCount
 (
 	JNIEnv* env,
 	jobject pObj
@@ -476,7 +476,7 @@ JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_GetIma
 //}
 
 ////copy data from original buffer to reserved
-//JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_MakeCopy
+//JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_MakeCopy
 //(
 //	JNIEnv* env,
 //	jobject pObj
@@ -529,7 +529,7 @@ JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_GetIma
 //}
 
 //get data from buffer
-JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_GetFromBufferNV21
+JNIEXPORT jbyteArray JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_GetFromBufferNV21
 (
 	JNIEnv* env,
 	jobject pObj,
@@ -575,7 +575,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_
 }
 
 ////get data from reserved buffer in JPEG format
-//JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_GetFromBufferReservedNV21
+//JNIEXPORT jbyteArray JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_GetFromBufferReservedNV21
 //(
 //	JNIEnv* env,
 //	jobject pObj,
@@ -624,7 +624,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_
 //}
 
 ////get data from reserved buffer in JPEG format without any rotation. ONLY FOR SLOW!!!
-//JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_GetFromBufferSimpleReservedNV21
+//JNIEXPORT jbyteArray JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_GetFromBufferSimpleReservedNV21
 //(
 //	JNIEnv* env,
 //	jobject pObj,
@@ -646,7 +646,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_
 //}
 
 //get data from buffer in JPEG format without any rotation. ONLY FOR SLOW!!!
-JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_GetFromBufferSimpleNV21
+JNIEXPORT jbyteArray JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_GetFromBufferSimpleNV21
 (
 	JNIEnv* env,
 	jobject pObj,
@@ -666,7 +666,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_
 }
 
 ////free reserved buffer
-//JNIEXPORT jboolean JNICALL Java_com_almalence_plugins_capture_preshot_PreShot_FreeBufferReserved
+//JNIEXPORT jboolean JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_preshot_PreShot_FreeBufferReserved
 //(
 //	JNIEnv* env,
 //	jobject pObj

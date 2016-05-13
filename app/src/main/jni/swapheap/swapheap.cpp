@@ -26,7 +26,7 @@ by Almalence Inc. All Rights Reserved.
 extern "C" {
 
 
-JNIEXPORT jint JNICALL Java_com_almalence_SwapHeap_SwapToHeap
+JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_SwapHeap_SwapToHeap
 (
 	JNIEnv* env,
 	jobject,
@@ -51,7 +51,7 @@ JNIEXPORT jint JNICALL Java_com_almalence_SwapHeap_SwapToHeap
 	return (jint)heap;
 }
 
-JNIEXPORT jint JNICALL Java_com_almalence_SwapHeap_SwapYuvToHeap
+JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_SwapHeap_SwapYuvToHeap
 (
 	JNIEnv* env,
 	jobject,
@@ -69,7 +69,7 @@ JNIEXPORT jint JNICALL Java_com_almalence_SwapHeap_SwapYuvToHeap
 }
 
 
-JNIEXPORT jbyteArray JNICALL Java_com_almalence_SwapHeap_CopyFromHeap
+JNIEXPORT jbyteArray JNICALL Java_com_zihuatanejo_finalcamera_SwapHeap_CopyFromHeap
 (
 	JNIEnv* env,
 	jobject,
@@ -93,7 +93,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_almalence_SwapHeap_CopyFromHeap
 	return jdata;
 }
 
-JNIEXPORT jbyteArray JNICALL Java_com_almalence_SwapHeap_SwapFromHeap
+JNIEXPORT jbyteArray JNICALL Java_com_zihuatanejo_finalcamera_SwapHeap_SwapFromHeap
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -101,14 +101,14 @@ JNIEXPORT jbyteArray JNICALL Java_com_almalence_SwapHeap_SwapFromHeap
 	jint jdata_length
 )
 {
-	jbyteArray jdata = Java_com_almalence_SwapHeap_CopyFromHeap(env, thiz, jheap, jdata_length);
+	jbyteArray jdata = Java_com_zihuatanejo_finalcamera_SwapHeap_CopyFromHeap(env, thiz, jheap, jdata_length);
 
 	free ((void*)jheap);
 
 	return jdata;
 }
 
-JNIEXPORT jboolean JNICALL Java_com_almalence_SwapHeap_FreeFromHeap
+JNIEXPORT jboolean JNICALL Java_com_zihuatanejo_finalcamera_SwapHeap_FreeFromHeap
 (
 	JNIEnv* env,
 	jobject,

@@ -899,7 +899,7 @@ void addRoundCornersRGBA8888
 	}
 }
 
-extern "C" JNIEXPORT jintArray JNICALL Java_com_almalence_util_ImageConversion_NV21toARGB
+extern "C" JNIEXPORT jintArray JNICALL Java_com_zihuatanejo_finalcamera_util_ImageConversion_NV21toARGB
 (
 	JNIEnv* env,
 	jobject thiz,

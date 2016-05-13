@@ -54,7 +54,7 @@ static int almashot_inited = 0;
 static Uint8 *OutPic = NULL;
 
 
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_objectremoval_AlmaCLRShot_Initialize
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_objectremoval_AlmaCLRShot_Initialize
 (
 	JNIEnv* env,
 	jobject thiz
@@ -77,7 +77,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_objec
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectremoval_AlmaCLRShot_Release
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_objectremoval_AlmaCLRShot_Release
 (
 	JNIEnv*,
 	jobject,
@@ -106,7 +106,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectre
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectremoval_AlmaCLRShot_AddYUVInputFrame
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_objectremoval_AlmaCLRShot_AddYUVInputFrame
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -153,7 +153,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectre
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectremoval_AlmaCLRShot_ConvertFromJpeg
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_objectremoval_AlmaCLRShot_ConvertFromJpeg
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -180,7 +180,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectre
 }
 
 
-extern "C" JNIEXPORT jintArray JNICALL Java_com_almalence_plugins_processing_objectremoval_AlmaCLRShot_NV21toARGB
+extern "C" JNIEXPORT jintArray JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_objectremoval_AlmaCLRShot_NV21toARGB
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -234,7 +234,7 @@ extern "C" JNIEXPORT jintArray JNICALL Java_com_almalence_plugins_processing_obj
 	return jpixels;
 }
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectremoval_AlmaCLRShot_getInputFrame
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_objectremoval_AlmaCLRShot_getInputFrame
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -245,7 +245,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectre
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectremoval_AlmaCLRShot_MovObjProcess
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_objectremoval_AlmaCLRShot_MovObjProcess
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -349,7 +349,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectre
 	return (jint)OutPic;
 }
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectremoval_AlmaCLRShot_MovObjFixHoles
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_objectremoval_AlmaCLRShot_MovObjFixHoles
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -382,7 +382,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectre
 	return 0;
 }
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_objectremoval_AlmaCLRShot_MovObjEnumerate
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_objectremoval_AlmaCLRShot_MovObjEnumerate
 (
 	JNIEnv* env,
 	jobject thiz,

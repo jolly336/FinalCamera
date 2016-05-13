@@ -4,7 +4,7 @@
     android:layout_height="400dp"
     android:orientation="vertical" >
 
-    <com.almalence.ui.RotateLayout
+    <com.zihuatanejo.finalcamera.ui.RotateLayout
         android:id="@+id/rotateLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -68,6 +68,6 @@
                 android:text="@string/Empty_Barcodes_List"
                 android:textSize="20sp" />
         </LinearLayout>
-    </com.almalence.ui.RotateLayout>
+    </com.zihuatanejo.finalcamera.ui.RotateLayout>
 
 </LinearLayout>

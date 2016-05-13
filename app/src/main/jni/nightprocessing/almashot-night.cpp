@@ -36,7 +36,7 @@ static int almashot_inited = 0;
 
 
 
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_night_AlmaShotNight_Initialize
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_night_AlmaShotNight_Initialize
 (
 	JNIEnv* env,
 	jobject thiz
@@ -59,7 +59,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_night
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_night_AlmaShotNight_Release
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_night_AlmaShotNight_Release
 (
 	JNIEnv* env,
 	jobject thiz
@@ -78,7 +78,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_night_Al
 }
 
 
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_plugins_processing_night_AlmaShotNight_NightAddYUVFrames
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_night_AlmaShotNight_NightAddYUVFrames
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -111,7 +111,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_almalence_plugins_processing_night_Al
 }
 
 
-extern "C" JNIEXPORT jboolean JNICALL Java_com_almalence_plugins_processing_night_AlmaShotNight_CheckClipping
+extern "C" JNIEXPORT jboolean JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_night_AlmaShotNight_CheckClipping
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -130,7 +130,7 @@ extern "C" JNIEXPORT jboolean JNICALL Java_com_almalence_plugins_processing_nigh
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_night_AlmaShotNight_Process
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_night_AlmaShotNight_Process
 (
 	JNIEnv* env,
 	jobject thiz,

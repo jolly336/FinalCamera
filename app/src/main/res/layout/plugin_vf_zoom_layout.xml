@@ -6,9 +6,9 @@
     android:layout_centerVertical="true"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    android:visibility="gone" >
-    
-    <com.almalence.ui.VerticalSeekBar
+    android:visibility="gone">
+
+    <com.zihuatanejo.finalcamera.ui.VerticalSeekBar
         android:id="@+id/zoomSeekBar"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
@@ -19,22 +19,21 @@
         android:progressDrawable="@drawable/scrubber_secondary_holo"
         android:thumb="@drawable/scrubber_control_selector_holo_light"
         android:thumbOffset="20px" />
-    
+
     <LinearLayout
         android:id="@+id/zoom_buttons_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/button_zoom_in"
             android:layout_width="@dimen/exposureButtonSize"
             android:layout_height="@dimen/exposureButtonSize"
+            android:layout_marginBottom="20dp"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/button_evplus" >
-        </ImageButton>
+            android:src="@drawable/button_evplus"></ImageButton>
 
         <ImageButton
             android:id="@+id/button_zoom_out"
@@ -42,8 +41,7 @@
             android:layout_height="@dimen/exposureButtonSize"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/button_evminus" >
-        </ImageButton>
+            android:src="@drawable/button_evminus"></ImageButton>
     </LinearLayout>
 
 </LinearLayout>

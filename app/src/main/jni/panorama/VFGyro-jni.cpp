@@ -87,7 +87,8 @@ int frame_idx, base_idx;
 extern "C"
 {
 
-JNIEXPORT void JNICALL Java_com_almalence_plugins_capture_panoramaaugmented_VfGyroSensor_Initialize
+
+JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_panoramaaugmented_VfGyroSensor_Initialize
 (
 	JNIEnv* env,
 	jobject thiz
@@ -110,7 +111,7 @@ JNIEXPORT void JNICALL Java_com_almalence_plugins_capture_panoramaaugmented_VfGy
 	}
 }
 
-JNIEXPORT void JNICALL Java_com_almalence_plugins_capture_panoramaaugmented_VfGyroSensor_Release
+JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_panoramaaugmented_VfGyroSensor_Release
 (
 	JNIEnv* env,
 	jobject thiz
@@ -131,7 +132,7 @@ JNIEXPORT void JNICALL Java_com_almalence_plugins_capture_panoramaaugmented_VfGy
 	}
 }
 
-JNIEXPORT void JNICALL Java_com_almalence_plugins_capture_panoramaaugmented_VfGyroSensor_SetFrameParameters
+JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_panoramaaugmented_VfGyroSensor_SetFrameParameters
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -209,7 +210,7 @@ int getTimeNsec() {
 		}
 
 
-JNIEXPORT void JNICALL Java_com_almalence_plugins_capture_panoramaaugmented_VfGyroSensor_Update
+JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_panoramaaugmented_VfGyroSensor_Update
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -436,7 +437,7 @@ JNIEXPORT void JNICALL Java_com_almalence_plugins_capture_panoramaaugmented_VfGy
 }
 
 
-JNIEXPORT jlong JNICALL Java_com_almalence_plugins_capture_panoramaaugmented_VfGyroSensor_Get
+JNIEXPORT jlong JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_panoramaaugmented_VfGyroSensor_Get
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -477,7 +478,7 @@ inline int max(int a, int b)
 	return (a > b ? a : b);
 }
 
-JNIEXPORT jlong JNICALL Java_com_almalence_plugins_capture_panoramaaugmented_VfGyroSensor_FixDrift
+JNIEXPORT jlong JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_panoramaaugmented_VfGyroSensor_FixDrift
 (
 	JNIEnv* env,
 	jobject,

@@ -16,7 +16,7 @@
         android:background="@android:color/transparent"
         android:gravity="right" >
 
-        <com.almalence.ui.RotateImageView
+        <com.zihuatanejo.finalcamera.ui.RotateImageView
             android:id="@+id/buttonSelftimer"
             android:layout_width="@dimen/videobuttons_size"
             android:layout_height="@dimen/videobuttons_size"
@@ -29,7 +29,7 @@
             android:paddingTop="0dp"
             android:scaleType="fitCenter"
             android:src="@drawable/gui_almalence_mode_selftimer" >
-        </com.almalence.ui.RotateImageView>
+        </com.zihuatanejo.finalcamera.ui.RotateImageView>
 
         <TextView
             android:id="@+id/timelapseCount"

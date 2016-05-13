@@ -4,7 +4,7 @@
     android:layout_height="320dp"
     android:padding="20dp" >
 
-    <com.almalence.ui.RotateLayout
+    <com.zihuatanejo.finalcamera.ui.RotateLayout
         android:id="@+id/rotateLayoutQuickSettingDialog"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,6 +19,6 @@
             android:drawSelectorOnTop="false"
             android:listPreferredItemHeight="48dp"
             android:scrollbarAlwaysDrawVerticalTrack="true" />
-    </com.almalence.ui.RotateLayout>
+    </com.zihuatanejo.finalcamera.ui.RotateLayout>
 
 </LinearLayout>

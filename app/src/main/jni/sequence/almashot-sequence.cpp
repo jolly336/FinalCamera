@@ -115,7 +115,7 @@ void NV21toARGB(
 }
 
 
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_sequence_AlmaCLRShot_Initialize
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_sequence_AlmaCLRShot_Initialize
 (
 	JNIEnv* env,
 	jobject thiz
@@ -138,7 +138,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_seque
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_sequence_AlmaCLRShot_Release
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_sequence_AlmaCLRShot_Release
 (
 	JNIEnv*,
 	jobject,
@@ -164,7 +164,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_sequence
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_sequence_AlmaCLRShot_ConvertFromJpeg
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_sequence_AlmaCLRShot_ConvertFromJpeg
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -228,7 +228,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_sequence
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_sequence_AlmaCLRShot_addYUVFrames
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_sequence_AlmaCLRShot_addYUVFrames
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -283,7 +283,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_sequence
 }
 
 
-extern "C" JNIEXPORT jintArray JNICALL Java_com_almalence_plugins_processing_sequence_AlmaCLRShot_NV21toARGB
+extern "C" JNIEXPORT jintArray JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_sequence_AlmaCLRShot_NV21toARGB
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -338,7 +338,7 @@ extern "C" JNIEXPORT jintArray JNICALL Java_com_almalence_plugins_processing_seq
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_sequence_AlmaCLRShot_MovObjProcess
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_sequence_AlmaCLRShot_MovObjProcess
 (
 	JNIEnv* env,
 	jobject thiz,

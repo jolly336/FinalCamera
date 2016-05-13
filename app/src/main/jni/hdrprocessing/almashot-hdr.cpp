@@ -43,7 +43,7 @@ static Uint8 *OutPic = NULL;
 void __attribute__((constructor)) initialize_openmp() {}
 void __attribute__((destructor)) release_openmp() {}
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_getAffinity
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_getAffinity
 (
 	JNIEnv* env,
 	jobject thiz
@@ -54,7 +54,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_hdr_Alma
 	//__android_log_print(ANDROID_LOG_FATAL, "AlmaShot", "Affinity mask: 0x%x", mask[0]);
 }
 
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_Initialize
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_Initialize
 (
 	JNIEnv* env,
 	jobject thiz
@@ -76,7 +76,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_A
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_Release
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_Release
 (
 	JNIEnv*,
 	jobject
@@ -96,7 +96,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_hdr_Alma
 
 
 // this is a very common operation - use ImageConversion jni interface instead (? - need to avoid global yuv array then?)
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_HDRConvertFromJpeg
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_HDRConvertFromJpeg
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -130,7 +130,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_A
 }
 
 
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_HDRAddYUVFrames
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_HDRAddYUVFrames
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -191,7 +191,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_A
 }
 
 
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_HDRPreview
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_HDRPreview
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -293,7 +293,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_A
 }
 
 
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_HDRPreview2
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_HDRPreview2
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -368,7 +368,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_A
 }
 
 
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_HDRPreview2a
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_HDRPreview2a
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -450,7 +450,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_hdr_A
 	return env->NewStringUTF("ok");
 }
 
-extern "C" JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_HDRProcess
+extern "C" JNIEXPORT jbyteArray JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_HDRProcess
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -525,7 +525,7 @@ extern "C" JNIEXPORT jbyteArray JNICALL Java_com_almalence_plugins_processing_hd
 	return jdata;
 }
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_HDRFreeInstance
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_HDRFreeInstance
 (
 	JNIEnv*,
 	jobject
@@ -552,7 +552,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_hdr_Alma
 	}
 }
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_hdr_AlmaShotHDR_HDRStopProcessing
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_hdr_AlmaShotHDR_HDRStopProcessing
 (
 	JNIEnv*,
 	jobject

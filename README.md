@@ -5,4 +5,3 @@
 感谢在Github上无私奉献的大牛们！
 ## Contacts
  * Email:haoxunwang525@gmail.com
- * QQ:354272087	

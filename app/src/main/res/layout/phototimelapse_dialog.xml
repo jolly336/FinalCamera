@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="320dp" >
 
-    <com.almalence.ui.RotateLayout
+    <com.zihuatanejo.finalcamera.ui.RotateLayout
         android:id="@+id/rotateLayoutTimelapse"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -73,6 +73,6 @@
                     android:layout_marginLeft="20dp" />
             </LinearLayout>
         </RelativeLayout>
-    </com.almalence.ui.RotateLayout>
+    </com.zihuatanejo.finalcamera.ui.RotateLayout>
 
 </LinearLayout>

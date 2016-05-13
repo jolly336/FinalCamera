@@ -60,7 +60,6 @@ import android.view.animation.RotateAnimation;
 import android.widget.CompoundButton;
 import android.widget.NumberPicker;
 import android.widget.RelativeLayout;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -73,6 +72,7 @@ import com.zihuatanejo.finalcamera.opencam.PluginManager;
 import com.zihuatanejo.finalcamera.opencam.cameracontroller.CameraController;
 import com.zihuatanejo.finalcamera.opencam.ui.GUI;
 import com.zihuatanejo.finalcamera.ui.RotateImageView;
+import com.zihuatanejo.finalcamera.ui.Switch.Switch;
 import com.zihuatanejo.finalcamera.util.Util;
 
 import java.io.File;

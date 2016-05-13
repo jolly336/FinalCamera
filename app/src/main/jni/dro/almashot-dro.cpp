@@ -19,7 +19,7 @@ static int almashot_inited = 0;
 
 // -------------------------------------------------------------------------------
 
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_simple_AlmaShotDRO_Initialize
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_simple_AlmaShotDRO_Initialize
 (
 	JNIEnv* env,
 	jobject thiz
@@ -41,7 +41,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_simpl
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_simple_AlmaShotDRO_Release
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_simple_AlmaShotDRO_Release
 (
 	JNIEnv* env,
 	jobject thiz
@@ -70,7 +70,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_simple_A
 
 
 // this is a very common operation - use ImageConversion jni interface instead (? - need to avoid global yuv array then?)
-extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_simple_AlmaShotDRO_ConvertFromJpeg
+extern "C" JNIEXPORT jstring JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_simple_AlmaShotDRO_ConvertFromJpeg
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -122,7 +122,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_almalence_plugins_processing_simpl
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_simple_AlmaShotDRO_GetYUVFrame
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_simple_AlmaShotDRO_GetYUVFrame
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -137,7 +137,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_simple_A
 }
 
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_processing_simple_AlmaShotDRO_DroProcess
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_processing_simple_AlmaShotDRO_DroProcess
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -218,7 +218,7 @@ jint throwRuntimeException(JNIEnv* env, const char* message)
 	return env->ThrowNew(exClass, message);
 }
 
-extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_video_RealtimeDRO_initialize
+extern "C" JNIEXPORT jint JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_video_RealtimeDRO_initialize
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -239,7 +239,7 @@ extern "C" JNIEXPORT jint JNICALL Java_com_almalence_plugins_capture_video_Realt
 }
 
 
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_plugins_capture_video_RealtimeDRO_render
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_video_RealtimeDRO_render
 (
 	JNIEnv* env,
 	jobject thiz,
@@ -295,7 +295,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_almalence_plugins_capture_video_Realt
 }
 
 
-extern "C" JNIEXPORT void JNICALL Java_com_almalence_plugins_capture_video_RealtimeDRO_release
+extern "C" JNIEXPORT void JNICALL Java_com_zihuatanejo_finalcamera_plugins_capture_video_RealtimeDRO_release
 (
 	JNIEnv* env,
 	jobject thiz,
